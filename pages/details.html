@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section class="details-page">
+        <div class="details-container">
+            <div class="details-image">
+
+                 <img class="main-image" id="mainImage" src="../Images/Room1..png" alt="Room">
+
+                <div class="gallery">
+                <img src="../Images/Room1..png" onclick="changeImage(this.src)" alt="Room">
+                <img src="../Images/Room2.png"  onclick="changeImage(this.src)"  alt="Room">
+                <img src="../Images/Room3.png"  onclick="changeImage(this.src)"  alt="Room">
+            </div>
+
+            </div>
+
+            <div class="details-info">
+                <h1 id="roomTitle">Furnished Room</h1>
+                <h2 id="roomPrice">₹ 6,500/Month</h2>
+                <p class="location" id="roomLocation">
+                    📍 Vaishali Nagar, Jaipur
+                </p>
+
+                <h3>Amenities</h3>
+                <ul class="amenities">
+                    <li>Wifi Available</li>
+                    <li>Attached Bathroom</li>
+                    <li>Fully Furnished</li>
+                    <li>24/7 Water Supply</li>
+                </ul>
+
+                <h3>Room Description</h3>
+                <p class="description">
+                    Spacious furnished room with attached bathroom, high-speed WiFi, Balcony access and 24/7 water supply. Located near market, bus stand and metro connectivity.
+                </p>
+                <br>
+                <h3>🏠 Property Owner</h3>
+                <div class="owner-card">
+                <p class="owner-name">👤Rajesh Sharma</p>
+                <p>📞 9876543210</p>
+                <p>⭐ Verified Owner</p>
+                <p>📅 Listed 2 Days Ago</p>
+                <p>🟢 Available Now</p>
+                </div>
+
+                <div class="contact-buttons">
+                    <button class="call-btn">
+                        Call Owner
+                    </button>
+                    <button class="whatsapp-btn">
+                        WhatsApp
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+<script src="details.js"></script>
+</body>
+</html>

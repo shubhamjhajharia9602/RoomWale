@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomWale - Find Room  Near You</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class = "logo">
+                <img src ="Images/logo.png" alt= "RoomWale Logo">
+            </div>
+            <ul>
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#rooms">Rooms</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero"> 
+            <div class="hero-content">
+
+               <h1>Find Your Perfect Room</h1>
+
+               <p>
+                 Browse verified rooms, PGs and apartments near your area.
+                </p>
+
+                <div class = "search-box">
+                    <input
+                     type="text"
+                     id="searchInput"
+                     placeholder="Enter Location"
+                     onkeyup="searchRooms()" />
+                    <button onclick="searchRooms()" >Search</button>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="rooms" class ="featured-rooms">
+        <h2>Featured Rooms</h2>
+        <p id="roomCount">5 Rooms Found</p>
+        <div class="room-container">
+            <div class="room-card" data-location="Vaishali Nagar">
+                <div class="status available">
+                Available
+                </div>
+                <div class="featured-tag">
+                Featured
+                </div>
+                    
+                    <img src="Images/Room1..png" alt="Room 1">
+                    <div class="room-info">
+                        <h3>Furnsihed Room</h3>
+                        <p>Vaishali Nagar,Jaipur</p>
+                        <p class ="features">Attached Kitchen & Bath</p>
+                        <span>₹ 6,500/month</span>
+                        <a href="pages/details.html?id=1" class="details-btn">
+                        View Details
+                        </a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-location="Mansarovar">
+                    <div class="status available">
+                    Available
+                    </div>
+                    <div class="featured-tag">
+                    Featured
+                    </div>
+                   
+                    <img src="Images/Room2.png" alt="Room 2">
+                    <div class="room-info">
+                         <h3>Relaxed Room</h3>
+                        <p>Mansarovar,Jaipur</p>
+                        <p>Attached Kitchen & Bath</p>
+                        <span>₹ 8,000/month</span>
+                        <a href="pages/details.html?id=2" class="details-btn">
+                        View Details
+                        </a>
+                    </div>
+                </div>
+                
+
+                <div class="room-card" data-location="Malviya Nagar">
+                    <div class="status available">
+                    Available
+                    </div>
+                    <div class="featured-tag">
+                    Featured
+                    </div>
+                   
+                    <img src="Images/Room3.png" alt="Room 3">
+                    <div class="room-info">
+                        <h3>Cozy Studio</h3>
+                        <p>Malviya Nagar,Jaipur</p>
+                        <p class ="features">Attached Balcony </p>
+                        <span>₹ 9,500/month</span>
+                        <a href="pages/details.html?id=3" class="details-btn">
+                        View Details
+                        </a>
+                    </div>
+                </div>
+
+                <div class="room-card" data-location="Jagatpura">
+                    <div class="status available">
+                    Available
+                    </div>
+                    <div class="featured-tag">
+                    Featured
+                    </div>
+                   
+                    <img src="Images/Room4.png" alt="Room 4">
+                    <div class="room-info">
+                         <h3>PG Room</h3>
+                        <p>Jagatpura,Jaipur</p>
+                        <p class ="features">Sharing room of 3 peoples</p>
+                        <span>₹ 12,000/month</span>
+                        <a href="pages/details.html?id=4" class="details-btn">
+                        View Details
+                        </a>
+                    </div> 
+                </div>
+
+               
+                 <div class="room-card" data-location="Dadi ka phatak">
+                    <div class="status available">
+                    Available
+                    </div>
+                    <div class="featured-tag">
+                    Featured
+                    </div>
+                  
+
+                    <img src="Images/Room5.png" alt="Room 5" >
+                    <div class="room-info">
+                        <h3>Double Sharing Room</h3>
+                        <p>Dadi ka phatak,Jaipur</p>
+                        <p class ="features">Fully maintained Room</p>
+                        <span>₹ 7,300/month</span>
+                        <a href="pages/details.html?id=5" class="details-btn">
+                        View Details
+                        </a>
+                    </div>
+               
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="about" id="about">
+
+    <h2>About RoomWale</h2>
+
+    <p>
+        RoomWale is a platform that helps students,
+        working professionals and families find
+        verified rooms, PGs and apartments easily.
+
+        Our goal is to make room hunting simple,
+        fast and reliable.
+    </p><br>
+
+    <div class="about-stats">
+        <div class="stat-box">
+            <h3>500+</h3>
+            <p>Rooms Listed</p>
+        </div>
+        <div class="stat-box">
+            <h3>200+</h3>
+            <p>Happy users</p>
+        </div>
+        <div class="stat-box">
+            <h3>50+</h3>
+            <p>Locations</p>
+        </div>
+    </div>
+
+</section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Message...."></textarea>
+            <button type="submit" onclick="sendMessage()">Send Message</button>
+        </form>
+    </section>
+        
+
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>RoomWale</h3>
+            <p>Find verified rooms, PGs and apartments near you. </p>
+        
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Rooms</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <p class="copyright"> © 2026 RoomWale. All Rights Reserved.</p>
+        </div>
+        </footer>
+
+</body>
+</html>
